@@ -56,8 +56,13 @@ Next move your browser to the top of your blocklist and execute the following sc
 And execute the following script:
 
 
-```
-for(i=0;i<xs.length; i++) {s=xs[i].textContent;if (s.startsWith('@')) {ys.push(s);}}
+```JavaScript
+for(i=0; i < xs.length; i++) {
+  s=xs[i].textContent; 
+  if(s.startsWith('@')) {
+     ys.push(s);
+  }
+}
 ```
 
 Press `<PageDown>` and repeat the previous script. Press `<PageDown>` again and execute the script again. Continue until you reached the bottom of the page.
@@ -73,7 +78,7 @@ ys.sort()
 ## Deduplicate
 
 ```JavaScript
-zs = [...new Set(ys)]
+var zs = [...new Set(ys)]
 ```
 
 ## Print the list
@@ -91,5 +96,4 @@ The following is an exercise for the reader :) :
 * Automate the the scrolling
 * Add a save to file option
 * Add an import option
-
 
