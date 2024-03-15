@@ -84,7 +84,7 @@ Print the set of blocked bimbos for further processing.
 zs.forEach(z => console.log(z);)
 ```
 
-## Futher work
+## Future work
 
 The following is an exercise for the reader :) :
 
